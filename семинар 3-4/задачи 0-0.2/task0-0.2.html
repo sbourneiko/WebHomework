@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #bfd5e5;">
+
+<nav class="py-2 bg-light border-bottom">
+    <ul class="nav justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Главная страница</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Опрос</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Контакты</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="GoneFludd.png" class="rounded mx-auto d-block w-70" width="600" height="400">
+            </div>
+            <div class="carousel-item">
+                <img src="kiss.jpg" class="rounded mx-auto d-block w-70" width="600" height="400">
+            </div>
+            <div class="carousel-item">
+                <img src="people.jpg" class="rounded mx-auto d-block w-70" width="600" height="400">
+            </div>
+            <div class="carousel-item">
+                <img src="МаксКорж.jpg" class="rounded mx-auto d-block w-70" width="600" height="400">
+            </div>
+            <div class="carousel-item">
+                <img src="Нервы.jpg" class="rounded mx-auto d-block w-70" width="600" height="400">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+</div>
+
+    <div class="container">
+        <h1 class="text-primary section-heading text-center">Какие ваши музыкальные предпочтения?</h1>
+    </div>
+    <div class="container">
+        <form role="form" class="form-horizontal p-3 mb-2 text-dark" style="background-color: rgba(246,237,229,0.84);">
+            <p class = "lead text-center"> Опрос проводиться для исследования музыкальных предпочтений с целью выявления музыкальных вкусов молодежи. Это поможет композиторам, музыкальным продюсерам и исполнителям понять какую музыку предпочтительнее создавать и продвигать.</p>
+            <fieldset class="form-group">
+                <legend>Контактная информация</legend>
+                <br>
+                <div class="form-group">
+                    <div class="col-md-2">
+                    <label for="name" class="control-label ">Имя</label>
+                    <input type="name" class="form-control" id="name" placeholder="Введите имя">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2">
+                    <label for="email" class="control-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="male">Ваш пол</label><br>
+                    <div class="col-md-2">
+                    <select  class="form-select" name="male">
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                    </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="checkbox">
+                <legend class="col-form-label col-3">Выберете ваш любимый музыкальный жанр:</legend>
+                <div class="col-9">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="legendcheckbox"
+                                   id="legendcheckbox1"
+                                   value="1">
+                            Рэп
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="legendcheckbox"
+                                   id="legendcheckbox2"
+                                   value="1">
+                            Хип-хоп
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="legendcheckbox"
+                                   id="legendcheckbox3"
+                                   value="1">
+                            R'n'b
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="legendcheckbox"
+                                   id="legendcheckbox4"
+                                   value="1">
+                            Рок
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="legendRadio" id="legendRadio5"
+                                   value="1">
+                            Поп
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <legend class="col-form-label col-3">Как часто вы ходите на музыкальные концерты?</legend>
+                <div class="col-9">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio1"
+                                   value="1">
+                            Раз в месяц
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio2"
+                                   value="2" checked>
+                            Раз в год
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio3"
+                                   value="3">
+                            Больше чем 1 раз в год
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="legendRadio" id="legendRadio4"
+                                   value="3">
+                            Не хожу
+                        </label>
+                    </div>
+                </div>
+                <div class="message">
+                    <label for="message" class="control-label">Для чего Вы слушаете музыку?</label>
+                    <input type="message" class="form-control" id="message" placeholder="Введите предложение">
+                </div>
+            </div>
+
+
+
+            <div class="form-group row">
+                <div class="offset-3 col-9">
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
